@@ -1,17 +1,17 @@
 # Tiến độ — rpa-nintex (App Ops + Nintex RPA)
 
 ## Tóm tắt
-- Cập nhật: 2026-11-16
-- Vị trí hiện tại: Phase 1 · Module 01-rpa-fundamentals · Bài 01
-- Đang chờ: người học gửi đề xuất xin quyền Nintex (Studio dev/test + Nintex University) cho leader — mốc kiểm tra 2026-11-29
-- Việc tiếp theo: học bài 01-01 "RPA là gì và khi nào nên dùng"
-- Tổng quan: 0/40 bài học · 0/14 bài tập đạt · 0/8 module hoàn thành
+- Cập nhật: 2026-11-17
+- Vị trí hiện tại: Phase 1 · Module 01-rpa-fundamentals · Bài 02
+- Đang chờ: người học gửi đề xuất xin quyền Nintex (Studio dev/test + Nintex University) cho leader — mốc kiểm tra 2026-11-29; người học ghi "nhật ký việc lặp lại" (≥ 5 dòng trước bài 01-05)
+- Việc tiếp theo: học bài 01-02 "Kiến trúc nền tảng RPA"
+- Tổng quan: 1/40 bài học · 0/14 bài tập đạt · 0/8 module hoàn thành
 - So với kế hoạch: đúng tiến độ (bắt đầu 2026-11-16, dự kiến xong 2027-01-15)
 
 ## Module
 | Module | Cấp độ đích | Trạng thái | Quiz module | Ngày hoàn thành |
 |---|---|---|---|---|
-| 01-rpa-fundamentals | L3 | chưa bắt đầu | — | — |
+| 01-rpa-fundamentals | L3 | đang học | — | — |
 | 02-app-ops-access | L3 | chưa bắt đầu | — | — |
 | 03-automation-scripting | L3 | chưa bắt đầu | — | — |
 | 04-nintex-studio | L3 | chưa bắt đầu | — | — |
@@ -23,7 +23,7 @@
 ## Bài học
 | Module | Bài | Trạng thái (chưa học/đang học/đã học/miễn) | Ngày học | Ghi chú |
 |---|---|---|---|---|
-| 01-rpa-fundamentals | 01 — RPA là gì và khi nào nên dùng | chưa học | — |  |
+| 01-rpa-fundamentals | 01 — RPA là gì và khi nào nên dùng | đã học | 2026-11-17 | Kiểm tra 2/3 (1 đúng, 2 một phần) |
 | 01-rpa-fundamentals | 02 — Kiến trúc nền tảng RPA | chưa học | — |  |
 | 01-rpa-fundamentals | 03 — Bot nhìn ứng dụng như thế nào | chưa học | — |  |
 | 01-rpa-fundamentals | 04 — Vòng đời dự án RPA | chưa học | — |  |
@@ -71,6 +71,7 @@
 ## Lịch ôn tập
 | Chủ đề | Bài học | Lần ôn | Ngày ôn tiếp |
 |---|---|---|---|
+| RPA là gì, khi nào nên/không nên dùng | 01-01 | 0 | 2026-11-18 |
 
 ## Chứng chỉ
 | Chứng chỉ | Trạng thái | Thi thử gần nhất (3 lần) | Ngày thi thật | Kết quả |
@@ -82,6 +83,8 @@
 |---|---|---|---|---|
 
 ## Điểm yếu cần theo dõi
+- Tính ROI theo thời gian con người (đếm theo số sự việc thay vì giờ công) — kiểm tra bài 01-01 — nhấn mạnh ở bài 01-05
+- Ứng phó sự cố bot: chưa nghĩ tới lỗi "thành công giả" và các bước ứng phó — kiểm tra bài 01-01 — nhấn mạnh ở bài 01-06, 02-05
 - Quyền truy cập Nintex chưa có — rủi ro chặn Phase 2 — mốc 2026-11-29
 - Ổ cứng Windows ~20 GB trống < 50 GB yêu cầu của Studio — dọn trước Phase 2
 - Tiếng Anh đọc yếu — mỗi bài có phần "Đọc tài liệu gốc" ngắn

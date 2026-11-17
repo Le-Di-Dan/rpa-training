@@ -14,7 +14,7 @@
 ## Danh sách bài học
 | # | Bài | Mục tiêu (1 dòng) | Giờ | Trạng thái file |
 |---|---|---|---|---|
-| 01 | RPA là gì và khi nào nên dùng | Phân biệt RPA với API integration, workflow, script; nhận ra quy trình hợp với RPA | 1.5 | chưa viết |
+| 01 | RPA là gì và khi nào nên dùng | Phân biệt RPA với API integration, workflow, script; nhận ra quy trình hợp với RPA | 1.5 | đã viết (`lessons/01-rpa-la-gi.md`) |
 | 02 | Kiến trúc nền tảng RPA | Studio, Robot attended/unattended, Server/Orchestrator, queue — ánh xạ Nintex/UiPath/Power Automate | 1.5 | chưa viết |
 | 03 | Bot nhìn ứng dụng như thế nào | Selector/DOM, UI Automation, nhận diện hình ảnh, OCR — vì sao bot hay 'click hụt' | 1.5 | chưa viết |
 | 04 | Vòng đời dự án RPA | Discovery → đánh giá → PDD → SDD → phát triển → UAT → triển khai → hypercare | 1.5 | chưa viết |
