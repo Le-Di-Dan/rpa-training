@@ -40,3 +40,24 @@
 | UiPath Orchestrator | (giữ nguyên) | Bộ điều phối web của UiPath, tương đương Console Plus | 01-02 |
 | Desktop flow / Cloud flow | Luồng desktop / Luồng cloud | Power Automate: bot RPA chạy trên máy / workflow chạy trên cloud | 01-02 |
 | Work queue | Hàng đợi công việc | Tên gọi queue trong Power Automate | 01-02 |
+| Selector | Bộ chọn | Mô tả giúp bot tìm đúng một phần tử, dựa vào cấu trúc và thuộc tính | 01-03 |
+| Dynamic attribute | Thuộc tính động | Thuộc tính đổi giá trị mỗi lần chạy (vd id tự sinh) — không nên dùng trong selector | 01-03 |
+| Microsoft UI Automation (UIA) | (giữ nguyên) | Framework trợ năng của Windows, trình bày app desktop thành cây phần tử cho bot đọc | 01-03 |
+| MSAA (Microsoft Active Accessibility) | (giữ nguyên) | Công nghệ trợ năng cũ hơn UIA, cho app rất cũ | 01-03 |
+| AutomationId / Name / ControlType | (giữ nguyên) | Thuộc tính UIA: mã định danh / tên hiển thị (bị dịch theo ngôn ngữ OS) / loại control | 01-03 |
+| Accessibility | Trợ năng | Hỗ trợ người khuyết tật dùng máy tính; RPA tận dụng hạ tầng này | 01-03 |
+| Image recognition | Nhận diện hình ảnh | Tìm phần tử bằng cách so khớp ảnh đã lưu với màn hình | 01-03 |
+| Match threshold | Ngưỡng khớp | % giống tối thiểu để robot chấp nhận đã tìm thấy đối tượng | 01-03 |
+| OCR (Optical Character Recognition) | Nhận dạng ký tự quang học | Chuyển ảnh có chữ thành chữ | 01-03 |
+| Coordinates | Toạ độ | Vị trí (x, y) trên màn hình; click theo toạ độ là cách giòn nhất | 01-03 |
+| Core action | Hành động chính | Hành động được record của một bước trong wizard Nintex (mặc định: click) | 01-03 |
+| Detected object | Đối tượng được nhận diện | Phần tử đã click lúc record, robot phải tìm lại lúc chạy | 01-03 |
+| Image and text / Text only | Ảnh và chữ / Chỉ chữ | Hai phương pháp nhận diện trong Nintex Detection Match Configuration | 01-03 |
+| Inner text / Outer text | Chữ bên trong / Chữ xung quanh | Chữ trong / quanh đối tượng, đọc bằng OCR để xác nhận vị trí | 01-03 |
+| Search area (Click / Stripe / Full) | Vùng tìm kiếm | Nơi robot Nintex tìm đối tượng: quanh điểm click / một dải / toàn màn hình | 01-03 |
+| Unique / Static / Clean | Duy nhất / Tĩnh / Sạch | 3 tiêu chí Nintex cho một đối tượng dễ nhận diện | 01-03 |
+| Offset | Độ lệch | Click lệch một khoảng cố định từ một đối tượng dễ nhận diện ở gần | 01-03 |
+| HTML Object Selector | Bộ chọn đối tượng HTML | Công cụ chọn phần tử web của Nintex, dùng trong HTML commands | 01-03 |
+| Nintex RPA Connector Extension | Tiện ích kết nối trình duyệt | Extension cần cài để Nintex điều khiển Chrome/Edge | 01-03 |
+| Timeout | Thời gian chờ tối đa | Quá thời gian này mà chưa thấy phần tử thì báo lỗi | 01-03 |
+| DPI scaling | Tỉ lệ hiển thị | Thiết lập phóng to giao diện Windows (100%, 125%...) — làm đổi kích thước ảnh trên màn hình | 01-03 |

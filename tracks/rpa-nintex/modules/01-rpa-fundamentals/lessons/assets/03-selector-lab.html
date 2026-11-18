@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>LC Lab 01-03 — Quản trị phân quyền (mô phỏng)</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 24px; background: #f5f6f8; }
+  h1 { font-size: 20px; }
+  .note { color: #666; font-size: 13px; }
+  table { border-collapse: collapse; background: #fff; min-width: 560px; }
+  th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+  th { background: #e9ecf1; }
+  button.grant { background: #2f6fde; color: #fff; border: 0; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+  button.grant[disabled] { background: #9bb; cursor: default; }
+  #loading { color: #b45309; }
+  #log { margin-top: 16px; font-family: monospace; white-space: pre-line; }
+</style>
+</head>
+<body>
+  <h1>Quản trị phân quyền — màn hình "Danh sách user"</h1>
+  <p class="note">App mô phỏng cho bài 01-03. Không phải hệ thống thật. Mỗi lần tải lại trang (F5) hoặc bấm "Làm mới danh sách": id của nút đổi ngẫu nhiên, thứ tự dòng bị xáo trộn, bảng xuất hiện sau ~2 giây.</p>
+
+  <p><button id="lc-refresh">Làm mới danh sách</button></p>
+  <div id="app"></div>
+  <div id="log"></div>
+
+<script>
+  // Dữ liệu giả lập — không phải dữ liệu thật
+  const users = [
+    { username: "nguyen.van.a", name: "Nguyễn Văn A", dept: "Kế toán" },
+    { username: "tran.thi.b",   name: "Trần Thị B",   dept: "Nhân sự" },
+    { username: "le.van.c",     name: "Lê Văn C",     dept: "Kinh doanh" },
+    { username: "pham.thi.d",   name: "Phạm Thị D",   dept: "Kế toán" }
+  ];
+
+  // id sinh ngẫu nhiên mỗi lần hiển thị (giống nhiều framework tự sinh id)
+  const randomId = () => "btn-" + Math.random().toString(16).slice(2, 8);
+
+  function grant(btn, user) {
+    btn.disabled = true;
+    btn.textContent = "Đã cấp";
+    document.getElementById("log").textContent +=
+      "Đã cấp quyền 'Xem báo cáo' cho: " + user.username + "\n";
+  }
+
+  function render() {
+    const app = document.getElementById("app");
+    app.innerHTML = '<p id="loading">Đang tải dữ liệu...</p>';
+
+    // Xáo trộn thứ tự (giống app thật sắp xếp theo "hoạt động gần nhất")
+    for (let i = users.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [users[i], users[j]] = [users[j], users[i]];
+    }
+
+    // Bảng chỉ xuất hiện sau ~2 giây (giống gọi API chậm)
+    setTimeout(() => {
+      const rows = users.map(u => `
+        <tr data-user="${u.username}">
+          <td>${u.username}</td><td>${u.name}</td><td>${u.dept}</td>
+          <td><button class="grant" id="${randomId()}">Cấp quyền</button></td>
+        </tr>`).join("");
+      app.innerHTML = `
+        <table>
+          <thead><tr><th>Username</th><th>Họ tên</th><th>Phòng ban</th><th>Thao tác</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+      app.querySelectorAll("tr[data-user]").forEach(tr => {
+        const user = users.find(u => u.username === tr.dataset.user);
+        const btn = tr.querySelector("button.grant");
+        btn.addEventListener("click", () => grant(btn, user));
+      });
+    }, 2000);
+  }
+
+  document.getElementById("lc-refresh").addEventListener("click", render);
+  render();
+</script>
+</body>
+</html>
