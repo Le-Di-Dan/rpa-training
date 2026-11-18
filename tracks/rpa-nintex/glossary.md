@@ -20,3 +20,23 @@
 | Do It / Guide Me | Làm hộ / Hướng dẫn | Hai chế độ chạy wizard của attended robot Nintex | 01-01 |
 | Nintex Studio | (giữ nguyên) | Công cụ record và chỉnh sửa wizard | 01-01 |
 | Nintex Console Plus | (giữ nguyên) | Nơi giao task cho unattended robot | 01-01 |
+| Platform | Nền tảng | Tập hợp thành phần phối hợp để xây, chạy, quản lý bot | 01-02 |
+| Orchestration / Orchestrator | Điều phối / Bộ điều phối | Giao việc cho robot, xếp ưu tiên, lên lịch, theo dõi | 01-02 |
+| RPA Server | Máy chủ RPA | Trung tâm của Nintex RPA (on-premises): lưu wizard, điều phối task | 01-02 |
+| On-premises | Tại chỗ | Cài trên máy chủ của công ty, không phải cloud của nhà cung cấp | 01-02 |
+| Task | Nhiệm vụ | Một lần chạy một wizard cụ thể | 01-02 |
+| Queue | Hàng đợi | Danh sách task chờ robot lấy về chạy | 01-02 |
+| Trigger (time-based / event-based) | Bộ kích hoạt (theo thời gian / theo sự kiện) | Cơ chế tự tạo task: theo lịch, hoặc khi có file/folder/email/database thay đổi | 01-02 |
+| Priority | Độ ưu tiên | Task ưu tiên cao chạy trước (Nintex 21.4: 10 cao nhất → 1 thấp nhất) | 01-02 |
+| Pull model | Mô hình kéo | Robot tự hỏi queue và lấy task, không bị đẩy task tới | 01-02 |
+| Sensor | Cảm biến | Attended robot tự kích hoạt khi nhân viên mở một app/màn hình cụ thể | 01-02 |
+| Wizard catalog | Danh mục wizard | Danh sách wizard nhân viên chọn để chạy trên attended robot | 01-02 |
+| Idle / Running / Stopped / Disconnected | Rảnh / Đang chạy / Đã dừng / Mất kết nối | Trạng thái robot trong Console Plus | 01-02 |
+| Virtual machine (VM) | Máy ảo | Máy tính chạy bằng phần mềm trên máy thật; nơi thường đặt unattended robot | 01-02 |
+| Robot account | Tài khoản robot | Tài khoản riêng cho robot đăng nhập hệ thống | 01-02 |
+| Admin Tool | Công cụ quản trị | Quản lý license, Credentials Vault, user của Nintex RPA | 01-02 |
+| SEQ | (giữ nguyên) | Log server đi kèm Nintex RPA | 01-02 |
+| Nintex Public API | API công khai của Nintex | Cho hệ thống khác tạo task cho robot | 01-02 |
+| UiPath Orchestrator | (giữ nguyên) | Bộ điều phối web của UiPath, tương đương Console Plus | 01-02 |
+| Desktop flow / Cloud flow | Luồng desktop / Luồng cloud | Power Automate: bot RPA chạy trên máy / workflow chạy trên cloud | 01-02 |
+| Work queue | Hàng đợi công việc | Tên gọi queue trong Power Automate | 01-02 |

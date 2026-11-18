@@ -1,11 +1,11 @@
 # Tiến độ — rpa-nintex (App Ops + Nintex RPA)
 
 ## Tóm tắt
-- Cập nhật: 2026-11-17
-- Vị trí hiện tại: Phase 1 · Module 01-rpa-fundamentals · Bài 02
+- Cập nhật: 2026-11-18
+- Vị trí hiện tại: Phase 1 · Module 01-rpa-fundamentals · Bài 03
 - Đang chờ: người học gửi đề xuất xin quyền Nintex (Studio dev/test + Nintex University) cho leader — mốc kiểm tra 2026-11-29; người học ghi "nhật ký việc lặp lại" (≥ 5 dòng trước bài 01-05)
-- Việc tiếp theo: học bài 01-02 "Kiến trúc nền tảng RPA"
-- Tổng quan: 1/40 bài học · 0/14 bài tập đạt · 0/8 module hoàn thành
+- Việc tiếp theo: ôn bài 01-01 (đến hạn 2026-11-18) bằng /on-tap → học bài 01-03 "Bot nhìn ứng dụng như thế nào"
+- Tổng quan: 2/40 bài học · 0/14 bài tập đạt · 0/8 module hoàn thành
 - So với kế hoạch: đúng tiến độ (bắt đầu 2026-11-16, dự kiến xong 2027-01-15)
 
 ## Module
@@ -24,7 +24,7 @@
 | Module | Bài | Trạng thái (chưa học/đang học/đã học/miễn) | Ngày học | Ghi chú |
 |---|---|---|---|---|
 | 01-rpa-fundamentals | 01 — RPA là gì và khi nào nên dùng | đã học | 2026-11-17 | Kiểm tra 2/3 (1 đúng, 2 một phần) |
-| 01-rpa-fundamentals | 02 — Kiến trúc nền tảng RPA | chưa học | — |  |
+| 01-rpa-fundamentals | 02 — Kiến trúc nền tảng RPA | đã học | 2026-11-18 | Kiểm tra 3/3; câu troubleshooting suy luận tốt, cần nêu thứ tự kiểm tra cụ thể hơn |
 | 01-rpa-fundamentals | 03 — Bot nhìn ứng dụng như thế nào | chưa học | — |  |
 | 01-rpa-fundamentals | 04 — Vòng đời dự án RPA | chưa học | — |  |
 | 01-rpa-fundamentals | 05 — Chọn quy trình & tính ROI | chưa học | — |  |
@@ -72,6 +72,7 @@
 | Chủ đề | Bài học | Lần ôn | Ngày ôn tiếp |
 |---|---|---|---|
 | RPA là gì, khi nào nên/không nên dùng | 01-01 | 0 | 2026-11-18 |
+| Kiến trúc nền tảng RPA: 4 khối, attended/unattended, trigger → task → queue → robot | 01-02 | 0 | 2026-11-19 |
 
 ## Chứng chỉ
 | Chứng chỉ | Trạng thái | Thi thử gần nhất (3 lần) | Ngày thi thật | Kết quả |
